@@ -68,6 +68,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#fast_context</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#should</string>
 		</dict>
 		<dict>
@@ -91,7 +95,7 @@
 		<key>context</key>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(context)\b</string>
+			<string>^\s*((?:fast_)?context)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>

@@ -20,7 +20,7 @@ should, context = nil, nil
 
 File.open(ENV['TM_FILEPATH']) do |f|
   lines     = f.read.split("\n")[0...n].reverse
-  context   = lines.find { |line| line =~ /^\s*context\b/ }
+  context   = lines.find { |line| line =~ /^\s*(?:(?:fast_)?context)\b/ }
   should    = parse_from_quotes(lines.find { |line| line =~ /^\s*should\b/ })
 end
 

@@ -95,7 +95,7 @@
 		<key>context</key>
 		<dict>
 			<key>begin</key>
-			<string>^\s*((?:fast_)?context)\b</string>
+			<string>^\s*(?:fast_)?(context)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
